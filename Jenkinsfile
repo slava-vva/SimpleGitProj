@@ -26,17 +26,17 @@ pipeline {
             steps {
                 bat '''
                 echo Stopping App Pool
-                %windir%\\System32\\inetsrv\\appcmd stop apppool /apppool.name:"${APP_POOL_NAME}"
+                %windir%\\System32\\inetsrv\\appcmd stop apppool /apppool.name:"%APP_POOL_NAME%"
 
                 echo Deploying files
-                xcopy /Y /E /I "$(WORKSPACE)\\SimpleGitProj\\bin\\${BUILD_CONFIG}\\*" "${IIS_SITE_PATH}\\bin\\"
-                xcopy /Y /E /I "$(WORKSPACE)\\SimpleGitProj\\Views" "${IIS_SITE_PATH}\\Views"
-                xcopy /Y /E /I "$(WORKSPACE)\\SimpleGitProj\\Content" "${IIS_SITE_PATH}\\Content"
-                xcopy /Y /E /I "$(WORKSPACE)\\SimpleGitProj\\Scripts" "${IIS_SITE_PATH}\\Scripts"
-                copy /Y "$(WORKSPACE)\\SimpleGitProj\\Web.config" "${IIS_SITE_PATH}\\Web.config"
+                xcopy /Y /E /I "%WORKSPACE%\\SimpleGitProj\\bin\\%BUILD_CONFIG%\\*" "%IIS_SITE_PATH%\\bin\\"
+                xcopy /Y /E /I "%WORKSPACE%\\SimpleGitProj\\Views" "%IIS_SITE_PATH%\\Views"
+                xcopy /Y /E /I "%WORKSPACE%\\SimpleGitProj\\Content" "%IIS_SITE_PATH%\\Content"
+                xcopy /Y /E /I "%WORKSPACE%\\SimpleGitProj\\Scripts" "%IIS_SITE_PATH%\\Scripts"
+                copy /Y "%WORKSPACE%\\SimpleGitProj\\Web.config" "%IIS_SITE_PATH%\\Web.config"
 
                 echo Starting App Pool
-                %windir%\\System32\\inetsrv\\appcmd start apppool /apppool.name:"${APP_POOL_NAME}"
+                %windir%\\System32\\inetsrv\\appcmd start apppool /apppool.name:"%APP_POOL_NAME%"
                 '''
             }
         }
