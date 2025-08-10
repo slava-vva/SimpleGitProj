@@ -1,0 +1,7 @@
+C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Release\net9.0\PubTmp\Out\SimpleGitProj.exe
+C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Release\net9.0\PubTmp\Out\appsettings.Development.json
+C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Release\net9.0\PubTmp\Out\appsettings.json
+C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Release\net9.0\PubTmp\Out\SimpleGitProj.dll
+C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Release\net9.0\PubTmp\Out\SimpleGitProj.deps.json
+C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Release\net9.0\PubTmp\Out\SimpleGitProj.runtimeconfig.json
+C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Release\net9.0\PubTmp\Out\SimpleGitProj.pdb
