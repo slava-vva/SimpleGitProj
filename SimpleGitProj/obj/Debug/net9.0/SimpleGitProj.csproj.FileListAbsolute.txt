@@ -89,9 +89,9 @@ C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Debug\net9.0\staticwebassets.build.jso
 C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Debug\net9.0\staticwebassets.development.json
 C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Debug\net9.0\SimpleGitProj.dll
 C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Debug\net9.0\refint\SimpleGitProj.dll
 C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Debug\net9.0\SimpleGitProj.pdb
 C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Debug\net9.0\SimpleGitProj.genruntimeconfig.cache
 C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Debug\net9.0\ref\SimpleGitProj.dll
+C:\2\cicd\SimpleGitProj\SimpleGitProj\obj\Debug\net9.0\SimpleGitProj.sourcelink.json

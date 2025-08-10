@@ -2,8 +2,8 @@
 <!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\_Publish\Simple_Git_Proj</_PublishTargetUrl>
-    <History>True|2025-08-10T02:43:08.0745605Z||;</History>
+    <_PublishTargetUrl>C:\_Publish\SimpleGitProj</_PublishTargetUrl>
+    <History>True|2025-08-10T05:59:20.6096900Z||;True|2025-08-10T14:43:08.0745605+12:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

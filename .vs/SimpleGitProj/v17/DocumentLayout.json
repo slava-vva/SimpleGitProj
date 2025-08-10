@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\2\\cicd\\SimpleGitProj\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{493E0162-B492-44D6-A803-C38A288F508C}|SimpleGitProj\\SimpleGitProj.csproj|c:\\2\\cicd\\simplegitproj\\simplegitproj\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{493E0162-B492-44D6-A803-C38A288F508C}|SimpleGitProj\\SimpleGitProj.csproj|solutionrelative:simplegitproj\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{493E0162-B492-44D6-A803-C38A288F508C}|SimpleGitProj\\SimpleGitProj.csproj|c:\\2\\cicd\\simplegitproj\\simplegitproj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{493E0162-B492-44D6-A803-C38A288F508C}|SimpleGitProj\\SimpleGitProj.csproj|solutionrelative:simplegitproj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,8 +18,34 @@
       "DocumentGroups": [
         {
           "DockedHeight": 126,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\2\\cicd\\SimpleGitProj\\SimpleGitProj\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SimpleGitProj\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\2\\cicd\\SimpleGitProj\\SimpleGitProj\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SimpleGitProj\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-10T03:32:54.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\2\\cicd\\SimpleGitProj\\SimpleGitProj\\Program.cs",
+              "RelativeDocumentMoniker": "SimpleGitProj\\Program.cs",
+              "ToolTip": "C:\\2\\cicd\\SimpleGitProj\\SimpleGitProj\\Program.cs",
+              "RelativeToolTip": "SimpleGitProj\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T02:52:14.534Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
