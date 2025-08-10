@@ -24,7 +24,7 @@ pipeline {
 
         stage('Deploy to IIS') {
             steps {
-                bat """
+                bat '''
                 echo Stopping App Pool
                 %windir%\\System32\\inetsrv\\appcmd stop apppool /apppool.name:"${APP_POOL_NAME}"
 
@@ -37,7 +37,7 @@ pipeline {
 
                 echo Starting App Pool
                 %windir%\\System32\\inetsrv\\appcmd start apppool /apppool.name:"${APP_POOL_NAME}"
-                """
+                '''
             }
         }
     }
