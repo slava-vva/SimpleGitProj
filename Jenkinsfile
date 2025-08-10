@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     environment {
-        SOLUTION_NAME = "SimpleGitProj.sln"
+        PROJECT_PATH  = "SimpleGitProj/SimpleGitProj.csproj"
         BUILD_CONFIG  = "Release"
-        IIS_SITE_PATH = "C:\\_Publish\\Simple_Git_Proj"
+        PUBLISH_DIR   = "C:\\_Publish\\SimpleGitProj_publish"
+        IIS_SITE_PATH = "C:\\_Publish\\SimpleGitProj"
         APP_POOL_NAME = "SimpleGitProj"
-        MSBUILD_EXE   = "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe"
     }
 
     stages {
@@ -16,9 +16,9 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Publish') {
             steps {
-                bat "\"${MSBUILD_EXE}\" ${SOLUTION_NAME} /p:Configuration=${BUILD_CONFIG} /t:Rebuild"
+                bat "dotnet publish %PROJECT_PATH% -c %BUILD_CONFIG% -o %PUBLISH_DIR%"
             }
         }
 
@@ -28,12 +28,8 @@ pipeline {
                 echo Stopping App Pool
                 %windir%\\System32\\inetsrv\\appcmd stop apppool /apppool.name:"%APP_POOL_NAME%"
 
-                echo Deploying files
-                xcopy /Y /E /I "%WORKSPACE%\\SimpleGitProj\\bin\\%BUILD_CONFIG%\\*" "%IIS_SITE_PATH%\\bin\\"
-                xcopy /Y /E /I "%WORKSPACE%\\SimpleGitProj\\Views" "%IIS_SITE_PATH%\\Views"
-                xcopy /Y /E /I "%WORKSPACE%\\SimpleGitProj\\Content" "%IIS_SITE_PATH%\\Content"
-                xcopy /Y /E /I "%WORKSPACE%\\SimpleGitProj\\Scripts" "%IIS_SITE_PATH%\\Scripts"
-                copy /Y "%WORKSPACE%\\SimpleGitProj\\Web.config" "%IIS_SITE_PATH%\\Web.config"
+                echo Copying files to IIS folder
+                robocopy "%PUBLISH_DIR%" "%IIS_SITE_PATH%" /MIR
 
                 echo Starting App Pool
                 %windir%\\System32\\inetsrv\\appcmd start apppool /apppool.name:"%APP_POOL_NAME%"
